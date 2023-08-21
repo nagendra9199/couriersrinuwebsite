@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src='https://unpkg.com/frosted-glass/dist/frostedglass.js'></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="path/to/jquery-3.6.0.min.js"></script>
@@ -24,6 +25,7 @@
             .navbar{
                 display: flex;
                 padding-right:20px;
+                
             }
             .nav-item{
                 padding-right:40px;
@@ -221,7 +223,11 @@ transform: scale(1);
     border-radius:10px;
     color:white;
 }
-
+.para{
+    color:rgb(102, 24, 24);
+    text-decoration: underline;
+    font-family: poppins;
+}
 
 
 
@@ -237,20 +243,61 @@ transform: scale(1);
     }
 
 
-    .twitter-card {
-    border: 1px solid #ccc;
-    overflow: hidden;
-    position: relative;
-    width:350px;
-}
-.twitter1{
-    height:250px;
-    width:350px;
-}
+    
 
 
 .span-container{
     display: none;
+}
+
+.social-media-flex-container{
+    display: grid;
+}
+.video-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.video-container{
+    margin:10px;
+}
+
+.fa {
+  padding: 8px;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  text-align:center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #ffffff;
+  color: rgb(230, 38, 38);
+}
+.social-icons-flex{
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    top:10%;
+    left:92%;
+    z-index: 1;
 }
 /* Media query for mobile view */
 @media (max-width: 767px) {
@@ -404,6 +451,49 @@ transform: scale(1);
                 height:250px;
                 width:260px;
             }
+            .social-media-flex-container{
+                display: block;
+            }
+            .video-main-container{
+                flex-direction: column;
+                justify-content: center;
+            }
+            .fa {
+                padding: 8px;
+                font-size: 13px;
+                width: 13px;
+                height: 13px;
+                text-align:center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 50%;
+                
+                }
+
+            .fa:hover {
+                    opacity: 0.7;
+                }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+                }
+                .fa-twitter {
+                background: #55ACEE;
+                color: white;
+                }
+            .fa-instagram {
+                background: #ffffff;
+                color: rgb(230, 38, 38);
+                }
+            .social-icons-flex{
+                    display:flex;
+                    flex-direction: column;
+                    position: fixed;
+                    top:10%;
+                    left:85%;
+                    z-index: 1;
+                }
                 
             }
             
@@ -437,6 +527,11 @@ transform: scale(1);
          
          <div id="bg-image">
             <img src="srinuimages\111.jpg"/>
+            <div class="social-icons-flex">
+                <a href="https://www.facebook.com/people/China-Rajappa-Nimmakayala/100050506418754/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/ChinarajappaN?t=CYTzsfWDw5kUEean7HAMTA&s=08" class="fa fa-twitter"></a>
+                <a href="https://instagram.com/chinarajappa_nimmakayala?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram"></a>
+                </div>
          </div>
          <div class="quote-container">
             <p>To Live Greatly <br>
@@ -523,14 +618,45 @@ transform: scale(1);
                 <li><img src="srinuimages\AU1A2637.JPG"></li>
                 <li><img src="srinuimages\AU1A2398.JPG"></li>
                 <li><img src="srinuimages\AU1A2416.JPG"></li>
-              </ul>
-
+            </ul>
             
         </div>
+        <p class="para">More about our Courier Srinu alias Vikruthi Srinivas :</p>
 
-        <div class="twitter-card">
-            <iframe border=0 frameborder=0 height=250 width=350 class="twitter1"
-     src="https://twitframe.com/show?url=https://twitter.com/__Courier__/status/1482193757676392448"></iframe>
+        <div class="video-main-container">
+            <div class="video-container">
+                <video controls width="300" height="200">
+                    <source src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video controls width="300" height="200">
+                    <source src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video controls width="300" height="200">
+                    <source src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+        <div class="video-main-container">
+            <div class="video-container">
+        
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
         <script>
@@ -575,6 +701,9 @@ btn3.addEventListener("click",()=>{
         btn3.textContent="Read Less"
     }
 });
+
+
+
         </script>
     </body>
 </html>
