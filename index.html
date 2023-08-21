@@ -200,7 +200,7 @@ transform: scale(1);
     padding: 20px;
 }
 .activity-main-container{
-    background-color: rgba(0, 4, 255, 0.233);
+    background-color: rgba(112, 12, 12, 0.288);
 }
 .activity-flex-container{
     display: flex;
@@ -241,15 +241,17 @@ transform: scale(1);
     border: 1px solid #ccc;
     overflow: hidden;
     position: relative;
+    width:350px;
+}
+.twitter1{
+    height:250px;
+    width:350px;
 }
 
 
-.facebook-embed {
-    max-width: 500px; /* Adjust as needed */
-    overflow: auto;
-    border: 1px solid #ccc;
+.span-container{
+    display: none;
 }
-
 /* Media query for mobile view */
 @media (max-width: 767px) {
     .dropdown-button {
@@ -369,7 +371,7 @@ transform: scale(1);
                 padding: 20px;
             }
             .activity-main-container{
-                background-color: rgba(0, 4, 255, 0.233);
+                background-color: rgba(122, 6, 6, 0.315);
             }
             .activity-flex-container{
                 display: flex;
@@ -391,6 +393,16 @@ transform: scale(1);
                 height:30px;
                 border-radius:10px;
                 color:white;
+            }
+            .twitter-card {
+                border: 1px solid #ccc;
+                overflow: hidden;
+                position: relative;
+                width:300px;
+            }
+            .twitter1{
+                height:250px;
+                width:260px;
             }
                 
             }
@@ -459,39 +471,40 @@ transform: scale(1);
             <h1 class="activity-head">Activity</h1>
             <div class="activity-flex-container">
                 <div class="activity-card-flex">
-                    <img src="srinuimages\AU1A22951.jpg" class="activity-image"/>
+                    <img src="srinuimages\f2.jpg" class="activity-image"/>
                     <div class="activity-card-container">
                         <h1>Courier srinu</h1>
-                        <p>There are many variations of passages of Lorem Ipsumavailable,but the majority have suffered alteration insome form, by injected humour amr sonar banla ami tomayvail able,but the majority
-                            There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by injected humoura
+                        <p>Minister Jogi. Protesting against Ramesh's comments today in Pedana, Janasena leaders and activists were blocked and shifted to Bandar Taluka Police Station.<span class="span-container" id="span1">
+                            Machilipatnam Janasena leader Sri Courier Srinu garu reached Bandaru Taluka police station to express his solidarity with the arrested Janasena soldiers.</span></p>
                             <div class="activity-btn">
-                                <button>Read More</button>
+                                <button id="btn1">Read More</button>
                             </div>
-                        </p>
+                        
                     </div>
                 </div>
 
                 <div class="activity-card-flex">
-                    <img src="srinuimages\AU1A22951.jpg" class="activity-image"/>
+                    <img src="srinuimages\f3.jpg" class="activity-image"/>
                     <div class="activity-card-container">
-                        <h1>Courier srinu</h1>
-                        <p>There are many variations of passages of Lorem Ipsumavailable,but the majority have suffered alteration insome form, by injected humour amr sonar banla ami tomayvail able,but the majority
-                            There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by injected humoura
+                        <h1>Jana Godavari in Tanuku</h1>
+                        <p>
+                            • Jaitra Yatra of Mr. Pawan Kalyan, President of Jana Sena, amid public protests<br><span class="span-container" id="span2">
+                            • The party lines were warmly welcomed with aartis and gajamalas<br>
+                            • Welcome flexi arches at every step<br>
+                            • Varahi Vijaya Yatra which went like Na Bhuto Na Mujabi Ane 🔱</span></p>
                             <div class="activity-btn">
-                                <button>Read More</button>
+                                <button id="btn2">Read More</button>
                             </div>
-                        </p>
                     </div>
                 </div>
 
                 <div class="activity-card-flex">
-                    <img src="srinuimages\AU1A22951.jpg" class="activity-image"/>
+                    <img src="srinuimages\f4.jpg" class="activity-image"/>
                     <div class="activity-card-container">
                         <h1>Courier srinu</h1>
-                        <p>There are many variations of passages of Lorem Ipsumavailable,but the majority have suffered alteration insome form, by injected humour amr sonar banla ami tomayvail able,but the majority
-                            There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by injected humoura
+                        <p>Machilipatnam Janasena Leaders Mr. Courier Srinu Garu and Varahi Committee giving directions to Malikipuram Sabha #VarahiVijayaYatra <span class="span-container" id="span3">volunteers 🔱</span></p>
                             <div class="activity-btn">
-                                <button>Read More</button>
+                                <button id="btn3">Read More</button>
                             </div>
                         </p>
                     </div>
@@ -516,7 +529,7 @@ transform: scale(1);
         </div>
 
         <div class="twitter-card">
-            <iframe border=0 frameborder=0 height=250 width=550
+            <iframe border=0 frameborder=0 height=250 width=350 class="twitter1"
      src="https://twitframe.com/show?url=https://twitter.com/__Courier__/status/1482193757676392448"></iframe>
         </div>
 
@@ -525,6 +538,42 @@ transform: scale(1);
     $('.dropdown-button').click(function() {
         $(this).parent().toggleClass('open');
     });
+});
+
+const btn1=document.getElementById("btn1")
+const span1=document.getElementById("span1")
+
+btn1.addEventListener("click",()=>{
+    if(span1.style.display==='block'){
+        span1.style.display='none'
+        btn1.textContent="Read More";
+        }
+    else{
+        span1.style.display="block";
+        btn1.textContent="Read Less"
+    }
+});
+
+btn2.addEventListener("click",()=>{
+    if(span2.style.display==='block'){
+        span2.style.display='none'
+        btn2.textContent="Read More";
+        }
+    else{
+        span2.style.display="block";
+        btn2.textContent="Read Less"
+    }
+});
+
+btn3.addEventListener("click",()=>{
+    if(span3.style.display==='block'){
+        span3.style.display='none'
+        btn3.textContent="Read More";
+        }
+    else{
+        span3.style.display="block";
+        btn3.textContent="Read Less"
+    }
 });
         </script>
     </body>
