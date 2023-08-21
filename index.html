@@ -84,6 +84,9 @@
                 height:400px;
                 display: none;
             }
+            .bio-image-container{
+                width:90vw;
+            }
             .bio-content-container{
                 width:400px;
                 padding-top: 100px;
@@ -233,6 +236,20 @@ transform: scale(1);
         font-size:10px;
     }
 
+
+    .twitter-card {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.facebook-embed {
+    max-width: 500px; /* Adjust as needed */
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+
 /* Media query for mobile view */
 @media (max-width: 767px) {
     .dropdown-button {
@@ -309,8 +326,10 @@ transform: scale(1);
                 display: none;
             }
             .bio-image2{
-                height:200px;
+                height:150px;
+                width:80vw;
                 display: block;
+                padding-left:0px;
             }
             .bio-content-container{
                 width:auto;
@@ -322,11 +341,11 @@ transform: scale(1);
             .bio-flex-container{
                 display: flex;
                 flex-direction: column;
-                justify-content: center; 
-                align-items: center;            
+                justify-content: center;      
                 background-color: #ffffff;
                 padding-bottom: 10px;
                 padding: 10px;
+                
             }
             .activity-image{
                 height:200px;
@@ -419,8 +438,9 @@ transform: scale(1);
         <div class="bio-flex-container">
             <div class="bio-content-container">
                 <h1>Courier Srinu</h1>
-                
-                    <img src="srinuimages\img3-removebg-preview.png" class="bio-image2"/>
+                <div class="bio-image-container">
+                    <img src="srinuimages\cs23.jpg" class="bio-image2"/>
+                </div>
 
                 <p>There are many variations of passages of Lorem Ipsumavailable,but the majority have suffered alteration insome form, by injected humour amr sonar banla ami tomayvail able,but the majority
                     There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by injected humoura
@@ -432,7 +452,7 @@ transform: scale(1);
                 
             </div>
             <div>
-                <img src="srinuimages\img3-removebg-preview.png" class="bio-image1"/>
+                <img src="srinuimages\cs23.jpg" class="bio-image1"/>
             </div>
         </div>
         <div class="activity-main-container">
@@ -494,6 +514,12 @@ transform: scale(1);
 
             
         </div>
+
+        <div class="twitter-card">
+            <iframe border=0 frameborder=0 height=250 width=550
+     src="https://twitframe.com/show?url=https://twitter.com/__Courier__/status/1482193757676392448"></iframe>
+        </div>
+
         <script>
             $(document).ready(function() {
     $('.dropdown-button').click(function() {
