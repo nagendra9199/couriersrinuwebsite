@@ -250,9 +250,7 @@ transform: scale(1);
     display: none;
 }
 
-.social-media-flex-container{
-    display: grid;
-}
+
 .video-main-container{
     display: flex;
     flex-direction: row;
@@ -260,7 +258,7 @@ transform: scale(1);
     align-items: center;
 }
 .video-container{
-    margin:10px;
+    margin:20px;
 }
 
 .fa {
@@ -325,6 +323,10 @@ transform: scale(1);
     justify-content: center;
     align-items: center;
     background:linear-gradient(to right,white, rgba(37, 33, 33, 0.411),white);
+}
+.video1:hover{
+    transition: 2s;
+    transform:scaleZ(1.2);
 }
 /* Media query for mobile view */
 @media (max-width: 767px) {
@@ -544,7 +546,7 @@ transform: scale(1);
              <a href="#activityContainer" class="nav-item"><p>Activities</p></a>
              <a href="#galleryContainer" class="nav-item"><p>Gallery</p></a>
              <a href="#videoContainer" class="nav-item"><p>Videos</p></a>
-             <a href="#" class="nav-item"><p>Social Media</p></a>
+             <a href="#socialMediaContainer" class="nav-item"><p>Social Media</p></a>
             </div>
             <div class="dropdown">
                 <button class="dropdown-button">Menu</button>
@@ -554,7 +556,7 @@ transform: scale(1);
                     <a href="#activityContainer" class="dropdown-a"><p>Activity</p></a>
                     <a href="#galleryContainer" class="dropdown-a"><p>Gallery</p></a>
                     <a href="#videoContainer" class="dropdown-a"><p>Videos</p></a>
-                    <a href="#" class="dropdown-a"><p>Social Media</p></a>
+                    <a href="#socialMediaContainer" class="dropdown-a"><p>Social Media</p></a>
                 </div>
             </div>
             
@@ -662,19 +664,19 @@ transform: scale(1);
         <div class="video-main-container">
             <div class="video-container">
                 <video controls width="300" height="200">
-                    <source src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
+                    <source class="video1" src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="video-container">
                 <video controls width="300" height="200">
-                    <source src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
+                    <source class="video1" src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="video-container">
                 <video controls width="300" height="200">
-                    <source src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
+                    <source class="video1" src="srinuimages\WhatsApp Video 2023-08-18 at 14.57.02.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -683,18 +685,18 @@ transform: scale(1);
         <div class="video-main-container">
             <div class="video-container">
         
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
+                <iframe width="300" height="200" class="video1" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-container">
                 
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
+                <iframe width="300" height="200" class="video1" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-container">
                 
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
+                <iframe width="300" height="200" class="video1" src="https://www.youtube.com/embed/6XqzdcvSQG4" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="social-media-flex-container">
+        <div class="social-media-flex-container" id="socialMediaContainer">
             <div class="twitter-card">
                 <iframe border=0 frameborder=0 height=250 width=350 class="twitter1"
          src="https://twitframe.com/show?url=https://twitter.com/__Courier__/status/1482193757676392448"></iframe>
@@ -702,6 +704,9 @@ transform: scale(1);
             <div class="twitter-card">
                 <iframe class="twitter1" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02oYDw19AuLQdAEQztDVTguaraiPbJwWHShc2FBThu1oHpuPCUdP98LFgnD1cnaukJl%26id%3D100091215660128&width=500" width="250" height="350" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
+        </div>
+        <div class="footer-container">
+            
         </div>
 
         <script>
