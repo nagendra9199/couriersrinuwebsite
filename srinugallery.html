@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://unpkg.com/frosted-glass/dist/frostedglass.js'></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="path/to/jquery-3.6.0.min.js"></script>
+        <style>
+            
+
+            body{
+                overflow-x: none;
+            }
+            .separate-bio-image{
+                height:760px;
+                width:100vw
+            }
+            .separate-bio-image2{
+                height:30vh;
+                
+            }
+            .biography-separate-container{
+                text-align: center;
+                font-family: arial;
+                width:100vw;
+            }
+            .bio-para1{
+                padding-left:15px;
+                padding-right:15px;
+            }
+
+
+            .header{
+                display:flex;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                justify-content: space-between;
+                padding-left:10px;
+                color: rgb(0, 0, 0);
+                font-size:10px;
+                background-color: transparent;
+                position: fixed;
+                width:100%;
+                font-size:15px;
+                z-index: 1;
+            }
+            .navbar{
+                display: flex;
+                padding-right:20px;
+                
+            }
+            .nav-item{
+                padding-right:40px;
+                text-decoration: none;
+                color:rgb(255, 255, 255);
+                font-size:20px;
+            }
+            .nav-item:hover{
+                text-decoration:dotted;
+                font-weight: bold;
+            }
+
+            .dropdown-button {
+                display: none; /* Hide on desktop */
+            }
+            .dropdown-a{
+                    display: none;
+                    text-decoration: none;
+                    color:white;
+                    font-size:10px;
+                }
+
+
+                .footer-container{
+    background-color: rgb(120, 151, 151);
+}
+.footer-flex{
+    display:flex;
+    justify-content: space-around;
+}
+.footer-head{
+    font-size:15px;
+    font-family: arial;
+    color:rgb(15, 15, 15);
+}
+.footer-link{
+    text-decoration: none;
+    color:rgb(73,66,66);
+    font-family:arial;
+}
+.about-head{
+    font-size:15px;
+    font-family:arial;
+    font-weight:bold;
+}
+.about{
+    text-decoration: none;
+    font-family:arial;
+    color:rgb(73, 66, 66);
+}
+.quick-head{
+    font-size:15px;
+    font-family:arial;
+    font-weight:bold;
+}
+.quick{
+    text-decoration: none;
+    font-family: arial;
+    color:rgb(73,66,66);
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+}
+.hrs{
+    border-width: 2px;
+    border-color:red;
+    width:90vw;
+}
+.copy{
+    font-family: arial;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.fa {
+  padding: 8px;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  text-align:center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.gallery-head{
+    text-align: center;
+    color:brown;
+    font-family: arial;
+}
+.gal-image2{
+    height:200px;
+}
+
+
+
+
+
+
+                @media (max-width: 767px) {
+    .dropdown-button {
+        display: block; 
+        position: absolute;
+        left:70%;
+        background-color:rgba(255, 0, 0, 0.616);
+        top:10%;
+        color:white;
+        border-width:0px;
+        font-size:10px;
+        height:20px;
+        border-radius:8px;
+    }
+    .dropdown-content {
+        display: none;
+        background-color:#444;
+        width:100px;
+        position: absolute;
+        left:60%;
+        top:70%;
+        border-radius:10px;
+        padding-left: 20px;
+        
+    }
+    .dropdown-a{
+        display: block;
+        text-decoration: none;
+        color:white;
+        font-size:10px;
+    }
+    .dropdown.open .dropdown-content {
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .head1{
+        font-size:10px;
+    }
+    .footer-container{
+                    background-color: rgb(155, 161, 184);
+                }
+                .footer-flex{
+                    display:flex;
+                    justify-content: space-around;
+                }
+                .footer-head{
+                    font-size:12px;
+                    font-family: arial;
+                    color:rgb(15, 15, 15);
+                }
+                .footer-link{
+                    text-decoration: none;
+                    color:rgb(73,66,66);
+                    font-family:arial;
+                    font-size:12px;
+                }
+                .about-head{
+                    font-size:12px;
+                    font-family:arial;
+                    font-weight:bold;
+                }
+                .about{
+                    text-decoration: none;
+                    font-family:arial;
+                    color:rgb(73, 66, 66);
+                    font-size:12px;
+                }
+                .quick-head{
+                    font-size:12px;
+                    font-family:arial;
+                    font-weight:bold;
+                }
+                .quick{
+                    text-decoration: none;
+                    font-family: arial;
+                    color:rgb(73,66,66);
+                    font-size:12px;
+                }
+                .footer-social{
+                    display: flex;
+                    align-items: center;
+                }
+                .separate-bio-image{
+                    height:220px;
+                    width:100vw
+                }
+                .separate-bio-image2{
+                    width:90vw;
+                    height:200px;
+                }
+                .biography-separate-container{
+                font-family: arial;
+                width:100vw;
+                font-size:15px
+            }
+            .gal-image2{
+                height:100px;
+            }
+
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div>
+             <h1 class="head1">Courier Srinu</h1>
+            </div>
+            <div class="navbar">
+             <a href="cs1.html" class="nav-item"><p>Home</p></a>
+             <a href="srinubiography.html" class="nav-item"><p>Biography</p></a>
+             <a href="cs1.html" class="nav-item"><p>Activities</p></a>
+             <a href="cs1.html" class="nav-item"><p>Gallery</p></a>
+             <a href="cs1.html" class="nav-item"><p>Videos</p></a>
+             <a href="cs1.html" class="nav-item"><p>Social Media</p></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-button">Menu</button>
+                <div class="dropdown-content">
+                    <a href="cs1.html" class="dropdown-a"><p>Home</p></a>
+                    <a href="srinubiography.html" class="dropdown-a"><p>Biography</p></a>
+                    <a href="cs1.html" class="dropdown-a"><p>Activity</p></a>
+                    <a href="cs1.html" class="dropdown-a"><p>Gallery</p></a>
+                    <a href="cs1.html" class="dropdown-a"><p>Videos</p></a>
+                    <a href="cs1.html" class="dropdown-a"><p>Social Media</p></a>
+                </div>
+            </div>
+            
+         </div>
+         
+
+
+                <div class="gallery-container" id="galleryContainer">
+                    <h1 class="gallery-head">Gallery</h1>
+                    <ul class="img-list">
+                        <a href="srinuimages\csss1.JPG""><img src="srinuimages\csss1.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss2.JPG"><img src="srinuimages\csss2.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss3.JPG"><img src="srinuimages\csss3.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss4.JPG"><img src="srinuimages\csss4.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss7.JPG"><img src="srinuimages\csss7.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss8.JPG"><img src="srinuimages\csss8.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss9.JPG"><img src="srinuimages\csss9.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\img1.jpg"><img src="srinuimages\img1.jpg" class="gal-image2"></a>
+                        <a href="srinuimages\img2.jpg"><img src="srinuimages\img2.jpg" class="gal-image2"></a>
+                        <a href="srinuimages\img3.jpg"><img src="srinuimages\img3.jpg" class="gal-image2"></a>
+                        <a href="srinuimages\cs123.jpg"><img src="srinuimages\cs123.jpg" class="gal-image2"></a>
+                        <a href="srinuimages\csss5.JPG"><img src="srinuimages\csss5.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss6.JPG"><img src="srinuimages\csss6.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss10.JPG"><img src="srinuimages\csss10.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss11.JPG"><img src="srinuimages\csss11.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss12.JPG"><img src="srinuimages\csss12.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss13.JPG"><img src="srinuimages\csss13.JPG" class="gal-image2"></a>
+                        <a href="srinuimages\csss15.JPG"><img src="srinuimages\csss15.JPG" class="gal-image2"></a>
+                    </ul>
+                    
+                </div>
+        
+
+
+            <div class="footer-container">
+                <div class="footer-flex">
+                    <div>
+                        <h1 class="footer-head">Vikruthi Srinivas</h1>
+                        <a href="" class="footer-link"><p>Janasena Party</p></a>
+                        <h1 class="footer-head">Contact :</h1>
+                        <p class="footer-link">ph no :</p>
+                    </div>
+                    
+                    <div>
+                        <h1 class="about-head">About Leaders</h1>
+                        <a href="" class="about"><p>Pawan Kalyan</p></a>
+                        <a href="" class="about"><p>Nagendra Babu</p></a>
+                        <a href="" class="about"><p>Nadendla Manohar</p></a>
+    
+                    </div>
+                    <div>
+                        <h1 class="quick-head">Quick Links</h1>
+                        <a href="" class="quick"><p>Home</p></a>
+                        <a href="" class="quick"><p>Biography</p></a>
+                        <a href="" class="quick"><p>Activity</p></a>
+                        <a href="" class="quick"><p>Gallery</p></a>
+                        <a href="" class="quick"><p>Videos</p></a>
+                        <a href="" class="quick"><p>Social Media</p></a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100091215660128" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/__Courier__" class="fa fa-twitter"></a>
+    
+                    </div>
+                </div>
+                <hr class="hrs">
+                <p class="copy">Copyright <span>&copy</span> 2023. Vikruthi Srinivas</p>
+            </div>
+
+
+        <script>
+            $(document).ready(function() {
+    $('.dropdown-button').click(function() {
+        $(this).parent().toggleClass('open');
+    });
+});
+        </script>
+    </body>
+</html>
