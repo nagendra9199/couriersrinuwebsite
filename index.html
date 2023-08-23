@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,6 +40,7 @@
             }
             #bg-image img{
                 width:100%;
+               
             }
             .quote-container{
                 color:rgb(255, 255, 255);
@@ -178,7 +179,7 @@ opacity: .35;
 transform: scale(1);
 }
 .activity-image{
-    height:300px;
+    height:180px;
 }
 .activity-card-container{
     background-color: #000;
@@ -740,17 +741,18 @@ transform: scale(1);
             <h1 class="activity-head">Activity</h1>
             <div class="activity-flex-container">
                 <div class="activity-card-flex">
-                    <img src="srinuimages\f2.jpg" class="activity-image"/>
+                    <img src="srinuimages\csss112.jpg" class="activity-image"/>
                     <div class="activity-card-container">
                         <h1>Courier srinu</h1>
-                        <p>Minister Jogi. Protesting against Ramesh's comments today in Pedana, Janasena leaders and activists were blocked and shifted to Bandar Taluka Police Station.<span class="span-container" id="span1">
-                            Machilipatnam Janasena leader Sri Courier Srinu garu reached Bandaru Taluka police station to express his solidarity with the arrested Janasena soldiers.</span></p>
+                        <p>I am proud to work as a volunteer for Jana Sena party which serves the people and feel ashamed if some <span class="span-container" id="span6">Jagan mohan reddy volunteer who scares the same people.</span></p>
                             <div class="activity-btn">
-                                <button id="btn1">Read More</button>
+                                <button id="btn6">Read More</button>
                             </div>
-                        
+                        </p>
                     </div>
                 </div>
+
+                
 
                 <div class="activity-card-flex">
                     <img src="srinuimages\f3.jpg" class="activity-image"/>
@@ -776,6 +778,51 @@ transform: scale(1);
                                 <button id="btn3">Read More</button>
                             </div>
                         </p>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+            <div class="activity-flex-container">
+                <div class="activity-card-flex">
+                    <img src="srinuimages\fb1.jpg" class="activity-image"/>
+                    <div class="activity-card-container">
+                        <h1>Courier srinu</h1>
+                        <p>Apta founder president Chandu Srinivas passed away recently. Machilipatnam JanaSena Party leaders Shri Courier <span class="span-container" id="span4">
+                            Srinu Vikruthi met Chandu Srinivas at his home in Kakarlamudi village of Tenali Constituency.</span></p>
+                            <div class="activity-btn">
+                                <button id="btn4">Read More</button>
+                            </div>
+                        
+                    </div>
+                </div>
+
+                <div class="activity-card-flex">
+                    <img src="srinuimages\fb2.jpg" class="activity-image"/>
+                    <div class="activity-card-container">
+                        <h1>Courier Srinu</h1>
+                        <p>
+                            anasena Party Machilipatnam in-charge Bandi Ramakrishna and Janasena leaders Courier Srinu paid floral tributes to the <br><span class="span-container" id="span5">
+                                statue of Amarjeevi Potti Sriramulu at the district court center to mark the birth anniversary of Amarjeevi Potti Sriramulu.
+                            </span></p>
+                            <div class="activity-btn">
+                                <button id="btn5">Read More</button>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="activity-card-flex">
+                    <img src="srinuimages\f2.jpg" class="activity-image"/>
+                    <div class="activity-card-container">
+                        <h1>Courier srinu</h1>
+                        <p>Minister Jogi. Protesting against Ramesh's comments today in Pedana, Janasena leaders and activists were blocked and shifted to Bandar Taluka Police Station.<span class="span-container" id="span1">
+                            Machilipatnam Janasena leader Sri Courier Srinu garu reached Bandaru Taluka police station to express his solidarity with the arrested Janasena soldiers.</span></p>
+                            <div class="activity-btn">
+                                <button id="btn1">Read More</button>
+                            </div>
+                        
                     </div>
                 </div>
                 
@@ -945,6 +992,39 @@ btn3.addEventListener("click",()=>{
     else{
         span3.style.display="block";
         btn3.textContent="Read Less"
+    }
+});
+
+btn4.addEventListener("click",()=>{
+    if(span4.style.display==='block'){
+        span4.style.display='none'
+        btn4.textContent="Read More";
+        }
+    else{
+        span4.style.display="block";
+        btn4.textContent="Read Less"
+    }
+});
+
+btn5.addEventListener("click",()=>{
+    if(span5.style.display==='block'){
+        span5.style.display='none'
+        btn5.textContent="Read More";
+        }
+    else{
+        span5.style.display="block";
+        btn5.textContent="Read Less"
+    }
+});
+
+btn6.addEventListener("click",()=>{
+    if(span6.style.display==='block'){
+        span6.style.display='none'
+        btn6.textContent="Read More";
+        }
+    else{
+        span6.style.display="block";
+        btn6.textContent="Read Less"
     }
 });
 
